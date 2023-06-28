@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pepsi Ad Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#icon').click(function(){
+        $('ul').toggleClass('show');
+      });
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* CSS styles */
+    * {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      list-style: none;
+    }
+    body{
+      font-family: montserrat;
+      height: 80px;
+      width: 100%;
+      background-image: url(pepsiad.jpg);
+    }
+    label.logo{
+      font-size: 50px;
+      font-weight: bold;
+      color: white;
+      padding: 0 100px;
+      line-height: 80px;
+    }
+    nav{
+      background: #34495e;
+
+    }
+    nav ul{
+      float: right;
+      margin-right: 40px;
+    }
+    nav li{
+      display: inline-block;
+      margin: 0 8px;
+      line-height: 80px;
+    }
+    nav a{
+      color: white;
+      font-size: 18px;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      padding: 7px 10px;
+      border-radius: 3px;
+    }
+    a.active,a:hover{
+      border: 1px solid white;
+      transition: .5s;
+    }
+    nav #icon{
+      color: white;
+      font-size: 30px;
+      line-height: 80px;
+      float: right;
+      margin-right: 40px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+    @media (max-width:1048px){
+      label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+      }
+      nav ul{
+        margin-right: 20px;        
+      }
+      nav a{
+        font-size: 17px;
+      }
+    }
+
+    @media (max-width:909px){
+      nav #icon{
+        display: block;
+      }
+    }
+      nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+      nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      nav a{
+        font-size: 20px;
+      }
+      a.active,a:hover{
+        border: none;
+        color: #3498db;
+      }
+      nav ul.show{
+        left: 0;
+      }
+      section{
+        background: url(peplogor.jpeg) no-repeat;
+        background-size: cover;
+        height: calc(100vh-80px);
+      }
+    .heading{
+      background-color: #fff;
+      color: rgb(0, 17, 255);
+      padding: 20px;
+      text-align: center;
+      border: 2px black;
+      font-size: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .ad-image {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .ad-image img {
+      max-width: 100%;
+    }
+
+    .cta-button {
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      background-color: #f00;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+}
+.cta-button:hover{
+    background-color: #c00;
+}
+/***********************Contact-starts************************/
+.contact{
+    background: #48c2c2d2;
+    width: 64%;
+    margin: 100px auto;
+    padding: 70px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    background-image: url();
+    background-size: cover;
+}
+.center h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    color: #0f0f0f;
+}
+.center p{
+    font-size: 1.1rem;
+    color: #0f0f0f;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+.contact .action form input[type="email"]{
+    max-width: 100%;
+    width: 470px;
+    padding: 12px 15px;
+    background: #0f0f0f;
+    color: #1b497e;
+    border: none;
+    outline: none;
+    margin: 0 10px 20px 0;
+    border-radius: 30px;
+}
+.contact .action form input[type="submit"]{
+    padding: 12px 40px;
+    background: #ffd650;
+    color: #0f0f0f;
+    border: none;
+    outline: none;
+    margin: 0 10px 20px 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <nav>
+    <label class="logo">WELCOME TO PEPSI...!!!</label>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>      
+    </ul>
+    <label id="icon">
+      <i class='fas fa-bars'></i>
+    </label>
+  </nav>
+  <section>
+    
+    
+      <div class="container">
+      <div class="ad-image">
+          <img src="c:\Users\lenovo\Desktop\myAllProjects\My Portfolio\pepsiad.jpg" alt="Pepsi ad" height="150%" width="200%" border-radius="50%">
+      </div>
+      <button class="cta-button"><a href="https://www.pepsi.com/"></a>Learn More</button>
+  </div>
+
+    <div class="contact" id="contact">
+      <div class="container">
+          <div class="center">
+              <h3>Let's talk about everything</h3>
+              <p>Don't like forms? Send me email.</p>
+          </div>
+          <div class="action">
+              <form>
+                  <input type="email" name="email" value="" placeholder="Enter Your email" required>
+                  <input type="submit" name="submit"value="submit">
+              </form>
+          </div>
+      </div>
+  </div>
+  </section>
+</body>
+</html>
